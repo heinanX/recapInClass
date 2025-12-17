@@ -1,0 +1,11 @@
+﻿@recap1217_HostAddress = https://localhost:7295
+
+POST {{recap1217_HostAddress}}/api/user
+Content-Type: application/json
+
+{
+  username: "testUser",
+  password: "password123"
+}
+
+###
