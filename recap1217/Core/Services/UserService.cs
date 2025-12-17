@@ -1,5 +1,6 @@
 ﻿using recap1217.Core.Interfaces;
 using recap1217.Data.Interfaces;
+using recap1217.Data.Models;
 
 namespace recap1217.Core.Services
 {
@@ -15,7 +16,7 @@ namespace recap1217.Core.Services
         public bool Login(string username, string password)
         {
 
-            var user = _userRepo.Login(username, password);
+            User user = _userRepo.Login(username, password);
             // Here would be the business logic for login such as validation, logging, etc.
             // a rule like max 3 login attempts can be implemented here
 

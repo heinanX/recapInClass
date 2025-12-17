@@ -7,6 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+
+// this is the automapper registration which means we can use automapper in our project. its a service that can be injected where needed
+builder.Services.AddAutoMapper(typeof(Program));
+
 //this is the generator that creates swagger documentation for our API
 builder.Services.AddSwaggerGen(options =>
 
