@@ -1,0 +1,6 @@
+﻿@controllerBasedWebApi_HostAddress = https://localhost:7009
+
+
+GET {{controllerBasedWebApi_HostAddress}}/api/products
+
+###
